@@ -1,0 +1,108 @@
+*{
+    height: 0 auto;
+    width: 0 auto;
+}
+body {
+    margin: 0;      /* Remove default body margins */
+    display: grid;   /* Enable CSS Grid */
+    justify-content: center; /* Shorthand for align-items: center and justify-items: center */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+.nav-bar {
+    position: absolute;
+    display: flex;
+    border: 2px solid black;
+    gap: 60vh; 
+    padding-left: 10vh;
+    padding-right: 10vh;   
+    align-items: center;
+    margin-left: 30vh;
+}
+
+.resume{
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.menu{
+    /* gap: 10px; */
+
+}
+
+.menu a{
+    color: black;
+    text-decoration: none;
+    padding-left: 20px;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+}
+
+.bg-pic{
+    position: relative;
+    height: 100vh;
+    filter: blur(8px);
+    
+}
+
+.bg-pic::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Your overlay color */
+}
+
+/* Main section */
+
+.my-details{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30vh;
+    margin-top: 20vh;
+    margin-left: 40vh;
+    background-color: rgba(0,0,0, 0.4);
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.contact{
+    display: grid;
+    gap: 10px;
+}
+
+#vinayak-pic{
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+}
+
+.my-detail span{
+    background-color: aqua;
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+.my-detail a{
+    color: black;
+    text-decoration: none;
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;  /* Adjust the gap as needed */
+    margin-top: 30px;
+}
+.links a{
+
+}
